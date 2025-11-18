@@ -1,0 +1,5 @@
+{
+  "name": "InstantArt",
+  "description": "A professional-grade AI image generator and editor powered by Gemini 2.5 Flash Image. Create, edit, and iterate on visuals instantly.",
+  "requestFramePermissions": []
+}
