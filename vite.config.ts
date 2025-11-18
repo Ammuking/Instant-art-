@@ -11,9 +11,10 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
+  // Do NOT embed real secret keys here.
+  // If you need client-side flags, add non-secret config only.
+  'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+},
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
